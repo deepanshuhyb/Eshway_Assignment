@@ -12,14 +12,12 @@ import { Checkbox } from "@/components/ui/checkbox";
 import React, { useState } from "react";
 
 export default function TaskList() {
-  // Using React Query to fetch tasks
   const { data: tasks, isLoading, isError } = useTasks();
   const [taskState, setTaskState] = useState<{ [id: number]: boolean }>({});
 
   if (isLoading) return <p>Loading tasks...</p>;
   if (isError) return <p>Error fetching tasks.</p>;
 
-  // Toggle done state locally
   const toggleDone = (id: number) => {
     setTaskState((prev) => ({
       ...prev,
