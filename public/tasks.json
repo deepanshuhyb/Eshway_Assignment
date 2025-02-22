@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Design Homepage Mockup",
+    "description": "Create initial mockup designs for the LTD homepage in Figma.",
+    "status": "todo",
+    "priority": "high"
+  },
+  {
+    "id": 2,
+    "title": "Implement User Authentication",
+    "description": "Set up user registration and login functionality using NextAuth.js.",
+    "status": "in_progress",
+    "priority": "high"
+  },
+  {
+    "id": 3,
+    "title": "Create Task API Endpoints",
+    "description": "Develop FastAPI endpoints for task creation, retrieval, and updates.",
+    "status": "todo",
+    "priority": "medium"
+  }
+]
