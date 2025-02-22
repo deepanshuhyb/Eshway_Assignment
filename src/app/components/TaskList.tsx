@@ -52,6 +52,7 @@ export default function TaskList() {
                   <Checkbox
                     checked={taskState[task.id] ?? task.done}
                     onCheckedChange={() => toggleDone(task.id)}
+                    className="border-2 border-white"
                   />
                 </TableCell>
                 <TableCell>{task.title}</TableCell>
